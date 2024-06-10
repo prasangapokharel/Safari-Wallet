@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receive</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        #qr-code {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-bottom">
+        <div class="container">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="send_eth">
+                        <i class="fas fa-arrow-up" style="color: #007bff;"></i>
+                        Send
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="receive">
+                        <i class="fas fa-arrow-down" style="color: #28a745;"></i>
+                        Receive
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="buy.html">
+                        <i class="fas fa-shopping-cart" style="color: #dc3545;"></i>
+                        Buy
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="history.html">
+                        <i class="fas fa-history" style="color: #ffc107;"></i>
+                        History
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <i class="fas fa-wallet" style="color: #17a2b8;"></i>
+                        Create Wallet
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Receive</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <h5 class="card-title">Your Address</h5>
+                    <p class="card-text">{{ address }}</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

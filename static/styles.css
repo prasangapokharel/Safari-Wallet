@@ -1,0 +1,104 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F0F0F0;
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    padding: 20px;
+    width: 350px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #000000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    font-size: 16px;
+    color: #333333;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    background-color: #F5F5F5;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #F0B90B;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #D89C0E;
+}
+
+.button-secondary {
+    background-color: #CCCCCC;
+    color: #333333;
+}
+
+.button-secondary:hover {
+    background-color: #BBBBBB;
+}
+/* Your existing CSS code here */
+
+/* Additional styles for the alert box */
+.alert {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.alert-success strong {
+    font-weight: bold;
+}
+
+.alert-success p {
+    margin-bottom: 0;
+}
+
+/* Button style */
+.copy-btn {
+    cursor: pointer;
+    margin-left: 5px;
+    border: none;
+    background: none;
+    color: #007bff;
+}
